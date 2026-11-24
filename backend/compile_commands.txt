@@ -1,0 +1,7 @@
+Run these commands in the MSYS2 UCRT64 terminal from the backend folder:
+gcc register.c -o /c/Apache24/cgi-bin/register.exe
+gcc login.c -o /c/Apache24/cgi-bin/login.exe
+gcc deposit.c -o /c/Apache24/cgi-bin/deposit.exe
+gcc withdraw.c -o /c/Apache24/cgi-bin/withdraw.exe
+gcc balance.c -o /c/Apache24/cgi-bin/balance.exe
+gcc history.c -o /c/Apache24/cgi-bin/history.exe

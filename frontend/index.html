@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureBank | Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><div class="brand">Secure<span>Bank</span></div><span class="tagline">Simple banking demonstration</span></header>
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">BANK MANAGEMENT SYSTEM</p>
+      <h1>Banking made <span>simple.</span></h1>
+      <p class="muted">A student project built with HTML, CSS and C programming.</p>
+      <div class="grid two">
+        <article class="card">
+          <h2>Welcome back</h2>
+          <p class="muted">Log in to access your demo account.</p>
+          <form action="/cgi-bin/login.exe" method="post">
+            <label>Account number</label>
+            <input name="account" type="text" required maxlength="20" placeholder="Enter account number">
+            <label>4-digit PIN</label>
+            <input name="pin" type="password" required inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="Enter demo PIN">
+            <button type="submit">Login to account</button>
+          </form>
+        </article>
+        <article class="card accent-card">
+          <div class="icon">＋</div>
+          <h2>New customer?</h2>
+          <p class="muted">Create a demo account to explore the banking features.</p>
+          <a class="button secondary" href="register.html">Create an account</a>
+          <div class="feature-list"><span>✓ Deposit money</span><span>✓ Withdraw money</span><span>✓ View balance & history</span></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>Educational demonstration only · Not a real banking service</footer>
+</body>
+</html>

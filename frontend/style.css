@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+:root{--navy:#10243a;--blue:#1769aa;--cyan:#eaf5ff;--ink:#172b3d;--muted:#718096;--line:#e4ebf2;--bg:#f4f8fc;--white:#fff;--green:#167a58}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+.topbar{height:76px;background:var(--white);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(6%,calc((100% - 1120px)/2))}
+.brand{font:800 25px 'Manrope',Arial,sans-serif;color:var(--navy);text-decoration:none;letter-spacing:-1px}.brand span{color:var(--blue)}
+.tagline,.navlink{font-size:13px;color:var(--muted);text-decoration:none}
+.container{width:min(100% - 40px,1050px);margin:auto;flex:1;display:flex;align-items:center;padding:55px 0}
+.hero{width:100%}.eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--blue);margin:0 0 12px}
+h1,h2{font-family:'Manrope',Arial,sans-serif;color:var(--navy);margin:0 0 12px}h1{font-size:clamp(32px,5vw,48px);letter-spacing:-1.5px}h1 span{color:var(--blue)}h2{font-size:22px}
+.muted{color:var(--muted);line-height:1.65;font-size:14px;margin:0 0 22px}
+.grid{display:grid;gap:22px;margin-top:30px}.two{grid-template-columns:1fr 1fr}
+.card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 12px 35px rgba(27,62,92,.06)}
+.accent-card{background:linear-gradient(145deg,#fff,#f0f7ff);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.icon{width:46px;height:46px;border-radius:14px;background:#dceeff;color:var(--blue);display:grid;place-items:center;font-size:29px;margin-bottom:20px}
+form{display:flex;flex-direction:column;gap:9px}
+label{font-size:13px;font-weight:600;margin-top:7px}
+input{width:100%;border:1px solid #dbe4ed;border-radius:9px;padding:13px 14px;font:14px 'DM Sans',Arial,sans-serif;outline:none;background:#fff}
+input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(23,105,170,.1)}
+button,.button{display:inline-block;border:0;border-radius:9px;background:var(--blue);color:white;padding:13px 18px;font:700 14px 'DM Sans',Arial,sans-serif;text-align:center;text-decoration:none;cursor:pointer;margin-top:12px}
+button:hover,.button:hover{background:#10568f}.secondary{background:var(--navy)}.secondary:hover{background:#203e5c}
+.feature-list{display:grid;gap:10px;margin-top:25px;color:var(--green);font-size:13px;font-weight:600}
+.narrow{width:min(100% - 36px,520px);margin:45px auto;flex:1}
+footer{text-align:center;color:#8a98a8;font-size:12px;padding:22px}
+@media(max-width:700px){.two{grid-template-columns:1fr}.container{padding:35px 0}.card{padding:23px}.tagline{display:none}}

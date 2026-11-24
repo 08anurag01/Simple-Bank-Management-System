@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Create Account | SecureBank</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Secure<span>Bank</span></a><a class="navlink" href="index.html">Back to login</a></header>
+<main class="narrow">
+  <section class="card">
+    <p class="eyebrow">GET STARTED</p><h1>Create an account</h1><p class="muted">Enter sample details for your classroom demonstration.</p>
+    <form action="/cgi-bin/register.exe" method="post">
+      <label>Full name</label><input name="name" required maxlength="60" placeholder="Your full name">
+      <label>Account number</label><input name="account" required maxlength="20" pattern="[A-Za-z0-9]{4,20}" placeholder="4–20 letters or digits">
+      <label>Mobile number</label><input name="phone" required maxlength="15" pattern="[0-9+ -]{7,15}" placeholder="Demo phone number">
+      <label>Address</label><input name="address" required maxlength="100" placeholder="City or address">
+      <label>Initial deposit (₹)</label><input name="amount" type="number" required min="0" step="0.01" value="500">
+      <label>Create 4-digit PIN</label><input name="pin" type="password" required maxlength="4" pattern="[0-9]{4}" inputmode="numeric" placeholder="4 digits">
+      <button type="submit">Create demo account</button>
+    </form>
+  </section>
+</main>
+<footer>Use fictional details only. This is not a real bank.</footer>
+</body></html>

@@ -1,0 +1,14 @@
+# Compiled C executables
+*.exe
+*.o
+
+# Database records
+database/accounts.txt
+database/transactions.txt
+
+# Temporary files
+*.tmp
+*.log
+
+# VS Code settings
+.vscode/
